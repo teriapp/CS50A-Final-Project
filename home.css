@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: darkgoldenrod;
+  font-family: 'Raleway', sans-serif;
+}
+main, section, article, aside, footer, header {
+  padding: 0.5rem;
+}
+
+   article {
+    border-bottom: solid lightgoldenrodyellow 1px;
+  }
+header, footer {
+  background-color: maroon;
+  color: palegoldenrod;
+  text-align: center;
+  border-bottom: 1px solid lightgoldenrodyellow;
+  
+}
+
+p {
+    
+font-weight: bold;
+}
+
+ h2, h3 {
+  text-align: center;
+font-family: 'Shadows Into Light', cursive;
+  font-size: 1.6em;
+    
+}
+
+
+#animatepic
+{
+animation: animatepic 3s ease 0s 1 normal none;
+}
+
+@keyframes animatepic {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
+}
+
+
+/*mobile nav bar*/
+nav {
+  background-color: darkgoldenrod;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+  position: relative;
+    
+}
+
+nav ul li a {
+  display: flex;
+  color: lightgoldenrodyellow;
+  background-color: maroon;
+
+  padding: 10px;
+  border-bottom: solid 1px lightgoldenrodyellow;
+}
+
+ul{
+  display: flex;
+  flex-direction:column;
+  margin:0;
+  padding:0;
+}
+
+
+ul li{
+  list-style-type:none;
+  font-weight: 500;
+  border-right:solid darkgoldenrod 1px;
+
+}
+ul li:nth-child(1){
+  border-left:solid darkgoldenrod 1px;
+}
+ul li a {
+  flex: 1;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: black; 
+  transition: all 0.2s;
+  padding:10px;
+  border-left:none;
+}
+
+
+nav a:hover,
+nav a:active,
+nav a:focus,
+nav a.navbar {
+  background-color: darkgoldenrod;
+  color: lightgoldenrod;
+}
+nav a.navbar {
+  background-color: darkgoldenrod;
+  font-weight: 800;
+}
+.dropdown > li > ul {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 0px;
+  padding: 0;
+  z-index: 2;
+  width: 250px;
+}
+.dropdown li ul li {
+  border-right: solid 1px #000;
+  background-color: darkgoldenrod;
+ 
+}
+.dropdown > li:hover > ul {
+  display: block;
+     
+
+}
+
+
+@media only screen and (min-width: 768px) {
+ul{
+  flex-direction:row;
+}
+  li{
+  flex: 1;
+}
+  body {
+    display: flex;
+    
+    flex-direction: column;
+    max-width: 80rem;
+    margin: auto;
+  }
+  main, section {
+    
+    display: flex;
+      flex: 33%;
+      flex-wrap: wrap;
+    
+    
+  }
+   article {
+    flex: 50%; 
+
+  }
+    
+
+    article:nth-child(2),article:nth-child(3) {
+    border-right: none;
+  }
+    article:nth-child(3) {
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+   article, article:nth-child(2) {
+    flex:33%; 
+    height:500px;
+    border-bottom:none;
+  }
+    
+    
+    article:nth-child(3) 
+    
+    {
+    border-right: none;
+  }
+
+
+
+
+aside {
+ float: right;   
+ width: 250px;
+ box-sizing: border-box;
+ border: dashed purple;
+    
+}
+}
+
+
+
+table {
+    border: 2px solid maroon;
+    border-spacing: 1px;
+    margin: 15px;
+    border-collapse: separate;
+}
+
+th {
+    
+    background-color: goldenrod;
+    
+
+}
+tr:nth-child(even) {
+    
+    background-color: goldenrod;
+}
+
+tr:hover {
+   background-color:gold;
+}
+
+caption {
+    
+    caption-side: top;
+    padding-bottom: 10px;
+}
+
+div.table-parent { 
+   overflow-x:auto; 
+}
+

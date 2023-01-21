@@ -1,0 +1,75 @@
+/* Form Related Rules */
+
+ h2{
+	 
+  text-align: center;
+font-family: 'Shadows Into Light', cursive;
+     font-size: 1.6em;
+
+}
+
+fieldset {
+    border: maroon solid 2px;
+    margin: 5px 0;
+    max-width: none;
+}
+legend {
+    font-size: 1.3em;
+    color: #000000;
+
+    
+    font-family: 'Raleway', serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+textarea {
+    color: rgba(178, 28, 8, 1);
+    width:50%;
+    height:100px;
+    max-width: 98%;
+    box-sizing: border-box;
+    border: 2px solid maroon;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: lightgoldenrodyellow;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+label{
+  width:12%;
+  display:inline-block;
+}
+.longlabel{
+  width:25%;
+}
+.shortlabel{
+  width:5%;
+}
+.label{
+  width:12%;
+}
+input[type=text],input[type=email],input[type=tel], input[type=url], input[type=password]{
+    margin-left:10px;
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: mintcream;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=url]:focus, textarea:focus  {
+    width: 80%;
+}
+input:focus, textarea:focus {
+    background-color:aliceblue;
+    color: rgba(150, 45, 62, 1);
+}
